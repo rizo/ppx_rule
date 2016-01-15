@@ -28,7 +28,7 @@ After the application the resulting code will look like this:
 let sum x y = x + y
 let hello who = "Hello, " ^ who
 
-let replaced = (0, "rules rock!", 316227.766017)
+let replaced = (5, "rules rock!", 316227.766017)
 let computed = (sum 1 1, hello "world", sqrt 99.0)
 ```
 
