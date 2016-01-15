@@ -39,7 +39,7 @@ For more examples see the `tests` directory and for build options run `make help
 ## Known Limitations
 
 - Parametric rules are not implemented yet.
-- The visibility of the rules is limited to module where they were declared.
+- The visibility of the rules is limited to the module where they were declared.
 - Recursive rules may have unexpected results.
 
 ## Project Status
