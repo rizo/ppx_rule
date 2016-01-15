@@ -9,14 +9,14 @@ let log str = output_string stderr (str ^ "\n")
 (* Recursively rocesses the value binding expression collecting patterns and
    values. Two types of bindings are possible: One and Many.
 
-   The One binding results from Pexp_fun usage the return value will contain a
-   list of consecutive lambda patterns and the final value:
+   The "One" binding results from Pexp_fun usage. In this case the return value
+   will contain a list of consecutive lambda patterns and the final value:
 
        fun pat0 -> fun pat1 -> ... -> patN -> val
 
        `One ([pat0; pat1; ...; patN], val)
 
-   The Many bindings are created with Pexp_function in which case several
+   The "Many" bindings are created with Pexp_function in which case several
    patterns and values are collected:
 
        function
@@ -28,7 +28,7 @@ let log str = output_string stderr (str ^ "\n")
        `Many [(pat0, val0); (pat1, val1); ...; (patN, valN)]
 
    The Pexp_fun rules with labels and optional arguments are not supported.
-   The Pexp_function rulse with when conditions are not supported.
+   The Pexp_function rules with when conditions are not supported.
    *)
 let collect_bindings expr =
   let rec loop (pat_list, _) expr =
