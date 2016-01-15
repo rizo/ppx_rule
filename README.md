@@ -36,7 +36,15 @@ Note that the rules disappear during the compliation, so no runtime overhead is 
 
 For more examples see the `tests` directory and for build options run `make help`.
 
-This project is still in development, please use with care.
+## Known Limitations
+
+- Parametric rules are not implemented yet.
+- The visibility of the rules is limited to module where they were declared.
+- Recursive rules may have unexpected results.
+
+## Project Status
+
+This project is still in development and at this point should be considered a proof of concept, please use with care.
 
 This syntax extension was inspired by [Rule pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/rewrite-rules.html) for Haskell.
 
