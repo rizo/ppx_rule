@@ -8,16 +8,16 @@ Consider the folloring simple examples:
 ```ocaml
 (* Helper functions *)
 
-let sum x y   = x + y
+let sum x y = x + y
 let hello who = "Hello, " ^ who
 
 (* Rules *)
 
-let%rule sum 2 2             = 5
-let%rule hello "rule"        = "rules rock!"
+let%rule sum 2 2 = 5
+let%rule hello "rule" = "rules rock!"
 let%rule sqrt 100000000000.0 = 316227.766017
 
-let matched  = (sum 2 2, hello "rule", sqrt 100000000000.0)
+let replaced = (sum 2 2, hello "rule", sqrt 100000000000.0)
 let computed = (sum 1 1, hello "world", sqrt 99.0)
 ```
 
@@ -26,10 +26,10 @@ After the application the resulting code will look like this:
 
 ```ocaml
 let sum x y = x + y
-let hello who  = "Hello, " ^ who
+let hello who = "Hello, " ^ who
 
-let matched = (0, "rules rock!", 316227.766017)
-let computed = ((sum 1 1), (hello "world"), (sqrt 99.0))
+let replaced = (0, "rules rock!", 316227.766017)
+let computed = (sum 1 1, hello "world", sqrt 99.0)
 ```
 
 Note that the rules disappear during the compliation, so no runtime overhead is added to the program.
