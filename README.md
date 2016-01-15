@@ -8,8 +8,8 @@ Consider the folloring simple examples:
 ```ocaml
 (* Helper functions *)
 
-let sum x y     = x + y
-let hello ~name = "Hello, " ^ name
+let sum x y   = x + y
+let hello who = "Hello, " ^ who
 
 (* Rules *)
 
