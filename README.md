@@ -1,5 +1,5 @@
 
-# PPX Rule - Compile-time optimization rules
+# Compile-time optimization rules
 
 This syntax extension implements compile-time rewrite rules to offer a powerful and flexible way to optimise your program.
 
