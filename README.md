@@ -35,5 +35,7 @@ Note that the rules disappear during the compliation, so no runtime overhead is 
 
 For more examples see the `tests` directory and for build options run `make help`.
 
+This project is still in development, please use with care.
+
 This syntax extension was inspired by [Rule pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/rewrite-rules.html) for Haskell.
 
