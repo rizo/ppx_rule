@@ -1,9 +1,9 @@
 
 # Compile-time optimization rules
 
-This syntax extension implements compile-time rewrite rules to offer a powerful and flexible way to optimise your program.
+This syntax extension implements compile-time rewrite rules to offer a powerful and flexible way to optimise your programs.
 
-Consider the folloring simple examples:
+Consider the following simple examples:
 
 ```ocaml
 (* Helper functions *)
